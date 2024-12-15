@@ -19,6 +19,18 @@ class Student {
         System.out.println(this.name);
         System.out.println(this.age);
     }
+
+    // Non-parameterized constructor
+    // Student() {
+    // System.out.println("constructor called");
+    // }
+
+    // Parameteried constructor
+    Student(String name, int age) {
+        this.name = "prakhar";
+        this.age = 21;
+    }
+
 }
 
 public class OOPs {
@@ -34,9 +46,8 @@ public class OOPs {
         pen1.printColor();
         pen2.printColor();
 
-        Student s1 = new Student();
-        s1.name = "prakhar";
-        s1.age = 21;
+        Student s1 = new Student("prakhar", 21);
+
         s1.printInfo();
 
     }
